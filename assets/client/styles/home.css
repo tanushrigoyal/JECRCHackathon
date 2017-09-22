@@ -1,0 +1,636 @@
+.landing-section {
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.landing-section .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+nav .nav-links {
+    padding-left: 30%;
+}
+
+.nav-container nav {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.01);
+    height: 78px;
+    z-index: 10000;
+}
+
+nav .register-btn {
+    margin: 20px;
+    background: #2ed7f8;
+}
+
+nav ul li a {
+    margin-top: 5px;
+    color: #000;
+}
+
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.09);
+}
+
+nav .scroll-color {
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.scroll-color ul li a {
+    color: #000;
+}
+
+.scroll-color ul li a:hover {
+    color: #2ed7f8;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.intro {
+    position: absolute;
+    color: #000;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.intro h2 {
+    font-size: 8em ;
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro h2 {
+        font-size: 8em !important;
+    }
+
+    .intro {
+        margin-top: 25%;
+    }
+
+    #about {
+        margin: 0 50px !important;
+    }
+
+    #about p {
+        text-align: left !important;
+    }
+
+    .team-container h2 {
+        font-size: 3em !important;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .intro h2 {
+        font-size: 4em !important;
+    }
+
+        .intro {
+            margin-top: 35%;
+        }
+
+            #about {
+                margin: 0 40px !important;
+            }
+
+                #about p {
+                    text-align: left !important;
+                }
+
+                .team-container h2 {
+                    font-size: 4em !important;
+                }
+}
+
+@media only screen and (max-width: 480px) {
+    .intro h2 {
+        font-size: 4em !important;
+    }
+
+        .intro {
+            margin-top: 50%;
+        }
+
+                    #about {
+                        margin: 0 30px !important;
+                    }
+
+            #about p {
+                text-align: left !important;
+            }
+
+            .team-container h2 {
+                font-size: 2em !important;
+                margin: 33px;
+                width: 80%;
+            }
+}
+
+@media only screen and (max-width: 320px) {
+    .intro h2 {
+        font-size: 3em !important;
+    }
+
+        .intro {
+            margin-top: 40%;
+        }
+
+                    #about {
+                        margin: 0 20px !important;
+                    }
+
+            #about p {
+                text-align: left !important;
+            }
+
+            .team-container h2 {
+                font-size: 2em !important;
+            }
+}
+
+.intro h2 p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 14px;
+    display: block;
+}
+
+/*ABOUT*/
+
+#about h1 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#about {
+    width: 100%;
+    background: #000;
+}
+
+#about p {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+
+.about-container {
+    color: #fff;
+    position: absolute;
+    margin: 70px;
+    width: 50%;
+}
+
+.head-line {
+    width: 40px;
+    height: 2px;
+    background-color: #2ed7f8;
+}
+
+.about-bold {
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(46, 215, 248);
+    padding: 2px 20px;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+
+
+/*INFORMATION*/
+
+.info-row {
+    height: 120px;
+    transition: 0.2s all;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.info-hack h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 2vh;
+}
+
+.info-hack p {
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+    margin-top: -2px !important;
+}
+
+/*CHALLENGE*/
+
+#challenge {
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.challenge-container h2 {
+    font-size: 3em;
+    padding-top: 30px;
+}
+
+.prob {
+    width: 23.6% !important;
+    display: inline-table;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.prob img {
+    width: 35%;
+}
+
+.prob p {
+    padding: 10px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.prob h5 {
+    color: #adadad;
+    font-size: 12px;
+    line-height: 14px;
+    /* margin-top: -16px; */
+    font-weight: 400;
+    border-top: 2px solid #2ed7f8;
+    letter-spacing: 0.3px;
+    margin: auto 34px;
+    padding-top: 5px;
+}
+
+/*TEAM*/
+
+.parallax-container {
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.team-container {
+    margin-top: 50px;
+}
+
+.team-container .row {
+    margin-bottom: 0;
+}
+
+.team-container .row .col {
+    padding: 0;
+}
+
+.team-heading {
+    color: #fff;
+    border-radius: 30px;
+    margin-left: 23%;
+    width: 55%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.team-container .team-image {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.card-back, .card-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-back, .card-front {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.card-front {
+    background-color: #fff;
+}
+
+.card-back {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.card.effect-hover:hover .card-front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card.effect-hover:active .card-front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card.effect-hover:hover .card-back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.card.effect-hover:active .card-back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+/*SCHEDULE*/
+
+.time {
+    color: #000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 6px 5px;
+    height: auto;
+}
+
+.hack-11 p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    display: inline-block;
+}
+
+.hack-12 img {
+    float: right;
+    width: 40px;
+    display: inline-block;
+}
+
+.hack-12 p {
+    width: calc(100% - 42px);
+    display: inline-block;
+    line-height: 18px;
+}
+
+.hack-12 p span {
+    display: block;
+    font-size: 10px;
+    color: #828282;
+    line-height: 13px;
+}
+
+.time-hack {
+    padding: 1px 10px;
+    color: #424242;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 3px;
+    border: 1px solid #000;
+    width: auto;
+}
+
+#time {
+    padding: 70px 0;
+}
+
+.hack-12 {
+    width: 23.6% !important;
+    display: inline-table;
+    background-color: #efefef;
+    margin: 6px 0;
+}
+
+.hack-11 {
+    width: 60%;
+    margin: 6px auto;
+    text-align: center;
+    background-color: #2ed7f8;
+    color: #fff;
+    margin-top: 50px;
+}
+
+@media(max-width:990px) {
+    .hack-12 {
+        width: 23.2% !important;
+    }
+}
+
+/*PRIZE*/
+
+#prize {
+    margin-bottom: 100px;
+}
+
+.prize-container .parallax-container {
+    height: 300px;
+    background: rgba(0,0,0,.5);
+}
+
+.prize-container .parallax-container h4 {
+    color: #fff;
+    margin-top: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*ACHIEVEMENTS*/
+#achievements .description h3 {
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+#achievements .description p {
+    margin: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+#achievements .description .description-para-2{
+    margin: 100px 40px 20px 30px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/*FOOTER*/
+.footer-container .row {
+    padding: 0 50px 0 50px;
+}
+
+footer {
+    background-color: #191919;
+    min-height: 350px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logofooter {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-col p {
+    color: #bfbfbf;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    line-height: 17px;
+}
+
+.footer-col p i {
+    width: 20px;
+    color: #999;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 2px;
+    text-align: left;
+}
+
+.footer-ul li {
+    line-height: 29px;
+    font-size: 12px;
+    text-align: left;
+    padding: 0px 16px;
+    display: block;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 3px 0;
+    background-color: #4c4c4c;
+    color: #000;
+}
+
+.footer-ul li a {
+    color: #ffffff;
+}
+
+.footer-ul i {
+    margin-right: 10px;
+}
+
+.copyright {
+    min-height: 40px;
+    background-color: #353535;
+}
+
+.copyright p {
+    text-align: left;
+    color: #FFF;
+    padding: 10px 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.heading7 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #d9d6d6;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.bottom_ul {
+    list-style-type: none;
+    float: right;
+    margin-bottom: 0;
+}
+
+.bottom_ul li {
+    float: left;
+    line-height: 40px;
+}
+
+.bottom_ul li:after {
+    content: "/";
+    color: #FFF;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.bottom_ul li a {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social li {
+    float: left;
+}
+
+.linked-in {
+    background-color: #007bb6;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.google {
+    background-color: #f63e28;
+}
+
+.logofooter img {
+    max-width: 380px;
+}
+
+.footer-col {
+    margin: 70px 0px 70px 0px;
+}
+
+footer .container .row {
+    padding: 40px 0;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+footer .row {
+    margin-bottom: 0;
+}
+
+.copyright .row {
+    margin-bottom: 0;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "jecrchackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/JECRCHackathon/JECRCHackathon.git"
+  },
+  "author": "Tanushri Goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/JECRCHackathon/JECRCHackathon/issues"
+  },
+  "homepage": "https://gitlab.com/JECRCHackathon/JECRCHackathon#README",
+  "dependencies": {
+    "express": "^4.15.4",
+    "path": "^0.12.7"
+  }
+}
