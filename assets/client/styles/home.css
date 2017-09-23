@@ -163,6 +163,34 @@
     opacity: 0.5;
 }
 
+/* Infinte slideshow */
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.5s ease-out; 
+}
+
+.images {
+  background: url(slideshow.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 10s linear infinite;
+}
+
+.slideshow:hover .images{
+   opacity: 0;
+}
+
+@keyframes moveSlideshow {  
+  100% { 
+    -webkit-transform: translateX(-200%);  
+  }
+}
+
 nav .nav-links {
     padding-left: 30%;
 }
