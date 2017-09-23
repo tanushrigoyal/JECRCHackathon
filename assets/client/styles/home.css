@@ -1,12 +1,13 @@
 .landing-section {
-    height: 700px;
+    height: 650px;
     width: 100%;
+    position: relative;
 }
 /* Cyclic Slider*/
 #slider {
    background: #000;
  /*  box-shadow: 1px 1px 5px rgba(0,0,0,0.7); */
-   height: 600px;
+   height: 100%;
    width: auto;
    overflow: visible;
    position: relative;
@@ -14,7 +15,7 @@
 
 #mask {
    overflow: hidden;
-   height: 600px;
+   height: 650px;
 }
 
 
@@ -25,8 +26,8 @@
 }
 
 #slider li {
-   width: 700px ;  /* Width Image */
-   height: 800px ; /* Height Image */
+   width: 100% ;  /* Width Image */
+   height: 100% ; /* Height Image */
    position: absolute;
    /*top: -325px;  Original Position - Outside of the Slider */
    list-style: none;
@@ -109,7 +110,7 @@
    position: relative;
    top: -5px;
    width: 680px;
-   height: 5px;
+   height: 10px;
    background: #000;
    animation: fullexpand 25s ease-out infinite;
 }
@@ -160,13 +161,8 @@
 }
 
 
-#slider :hover li,
-#slider :hover .progress-bar {
-   animation-play-state: paused;
-}
-
 .landing-section .background {
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.5;

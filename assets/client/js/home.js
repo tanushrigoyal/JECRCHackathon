@@ -30,9 +30,6 @@ $( document ).ready(function(){
             });
         }
     });
-
-    $("about").scrollTop($("about").css('position', 'fixed'));
-
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('about', '/client/styles/particles.json', function() {
   console.log('callback - particles.js config loaded');
