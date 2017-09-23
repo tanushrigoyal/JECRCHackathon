@@ -1,14 +1,14 @@
 .landing-section {
     height: 700px;
     width: 100%;
-    position: relative;
 }
 
 .landing-section .background {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     opacity: 0.5;
+    z-index: -1;
 }
 
 nav .nav-links {
@@ -161,6 +161,7 @@ nav .scroll-color {
     display: block;
 }
 
+
 /*ABOUT*/
 
 #about h1 {
@@ -240,6 +241,7 @@ nav .scroll-color {
 #challenge {
     padding: 70px 0px;
     text-align: center;
+    background: #fff;
 }
 
 .challenge-container h2 {
@@ -371,7 +373,9 @@ nav .scroll-color {
 }
 
 /*SCHEDULE*/
-
+#time {
+    background: #fff;
+}
 .time {
     color: #000;
     border-radius: 5px;
@@ -464,6 +468,10 @@ nav .scroll-color {
 }
 
 /*ACHIEVEMENTS*/
+#achievements {
+    background: #fff;
+}
+
 #achievements .description h3 {
     margin-top: 50px;
     font-size: 3em;
