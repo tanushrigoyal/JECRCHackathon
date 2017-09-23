@@ -110,7 +110,7 @@
    position: relative;
    top: -5px;
    width: 680px;
-   height: 10px;
+   height: 20px;
    background: #000;
    animation: fullexpand 25s ease-out infinite;
 }
@@ -166,7 +166,6 @@
     height: 100%;
     width: 100%;
     opacity: 0.5;
-    z-index: -1;
 }
 
 nav .nav-links {
@@ -533,6 +532,7 @@ nav .scroll-color {
 /*SCHEDULE*/
 #time {
     background: #fff;
+    padding: 70px 0;
 }
 .time {
     color: #000;
@@ -581,10 +581,6 @@ nav .scroll-color {
     width: auto;
 }
 
-#time {
-    padding: 70px 0;
-}
-
 .hack-12 {
     width: 23.6% !important;
     display: inline-table;
@@ -605,6 +601,57 @@ nav .scroll-color {
     .hack-12 {
         width: 23.2% !important;
     }
+}
+
+/*ROCKET*/
+/* initial state */
+#outerspace {
+position: relative;
+height: 600px;
+background: #0c0440;
+color: #fff;
+}
+
+#outerspace img {
+    height: 100%;
+    width: 100%;
+}
+.rocket {
+position: absolute;
+bottom: 0px;
+left: 50px;
+-webkit-transition: 1s ease-in;
+-moz-transition: 1s ease-in;
+-o-transition: 1s ease-in;
+transition: 1s ease-in;
+}
+
+.rocket div img {
+width: 300px;
+height: 350px;
+-webkit-transition: 1s ease-in-out;
+-moz-transition: 1s ease-in-out;
+-o-transition: 1s ease-in-out;
+transition: 1s ease-in-out;
+}
+
+.rocket-body {
+    position: absolute;
+    color: #fff;
+    padding: 20px;
+    top: 20%;
+    right: 50px;
+    width: 50%;
+}
+
+
+/* hover final state */
+#outerspace:hover div.rocket {
+-webkit-transform: translate(0px,-500px);
+-moz-transform: translate(0px,-500px);
+-o-transform: translate(0px,-500px);
+-ms-transform: translate(0px,-500px);
+transform: translate(0px,-500px);
 }
 
 /*PRIZE*/
