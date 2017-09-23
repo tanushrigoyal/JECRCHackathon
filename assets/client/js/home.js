@@ -31,7 +31,7 @@ $( document ).ready(function(){
         }
     });
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('about', '/client/styles/particles.json', function() {
+particlesJS.load('particle', '/client/styles/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
