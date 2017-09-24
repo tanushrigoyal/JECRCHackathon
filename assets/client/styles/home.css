@@ -689,7 +689,7 @@ transform: translate(0px,-500px);
 /*PRIZE*/
 
 #prize {
-    margin-bottom: 100px;
+    margin:100px 0;
 }
 
 .prize-container .parallax-container {
