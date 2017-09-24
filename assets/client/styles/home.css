@@ -85,7 +85,7 @@
    44% { top: 0px; opacity: 1; }
    56% { top: 0px; opacity: 1; }
    60% { top: 325px; opacity: 0; z-index: 0; }
-   61% { top: -325px; opacity: 0; z-index: -1; }
+   61% { top: -325px; opacity: 0; z-index: -1;  }
    100%{ top: -325px; opacity: 0; z-index: -1; }
 }
 
@@ -208,8 +208,8 @@ nav .register-btn {
 }
 
 nav ul li a {
-    margin-top: 5px;
     color: #000;
+    line-height: 78px;
 }
 
 nav ul li a:hover {
@@ -237,7 +237,7 @@ nav .scroll-color {
     color: #000;
     text-transform: uppercase;
     width: 100%;
-    margin-top: 20%;
+    z-index: 3;
 }
 
 .intro h2 {
