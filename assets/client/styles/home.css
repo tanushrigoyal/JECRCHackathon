@@ -615,6 +615,26 @@ nav .scroll-color {
     }
 }
 
+
+/*RULES*/
+#rules {
+    background: #EEEEEE;
+    padding: 30px;
+}
+
+#rules img {
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+#rules .rules-content {
+    display: inline-block;
+}
+
+#rules .cont {
+    width: 45%;
+}
+
 /*ROCKET*/
 /* initial state */
 #outerspace {
