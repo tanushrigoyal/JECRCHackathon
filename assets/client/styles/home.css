@@ -412,37 +412,43 @@ nav .scroll-color {
     padding-top: 30px;
 }
 
-.prob {
-    width: 23.6% !important;
-    display: inline-table;
-    padding: 30px 0;
-    text-align: center;
+ .my {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 500px !important;
+
 }
 
-.prob img {
-    width: 35%;
+.my-front .row .col img{
+    height: 100px;
+    width: 200px;
 }
 
-.prob p {
-    padding: 10px 0;
-    font-weight: bolder;
-    text-transform: uppercase;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.prob h5 {
-    color: #adadad;
+.challenge-btn {
     font-size: 12px;
-    line-height: 14px;
-    /* margin-top: -16px; */
-    font-weight: 400;
-    border-top: 2px solid #2ed7f8;
-    letter-spacing: 0.3px;
-    margin: auto 34px;
-    padding-top: 5px;
 }
 
+.challenge-container .my-back {
+    background: #fff;
+    color: #000;
+}
+
+.my-btn-back {
+    bottom: -400px;
+}
+
+.back-content {
+    padding: 50px;
+    text-align: left;
+}
+.back-content ol {
+    font-size: 18px;
+}
+
+.back-content h4 {
+    margin-left: 14px;
+}
 /*TEAM*/
 
 .parallax-container {
