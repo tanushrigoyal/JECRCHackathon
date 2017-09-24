@@ -1,7 +1,6 @@
 .landing-section {
     height: 650px;
     width: 100%;
-    position: relative;
 }
 /* Cyclic Slider*/
 #slider {
@@ -137,60 +136,6 @@
    18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
 }
 
-#slider .tooltip {
-   background: rgba(0,0,0,0.7);
-   width: 300px;
-   height: 60px;
-   position: relative;
-   bottom: 75px;
-   left: -320px;
-   transition: all 0.3s ease-in-out;
-}
-
-#slider .tooltip h1 {
-   color: #fff;
-   font-size: 24px;
-   font-weight: 300;
-   line-height: 60px;
-   padding: 0 0 0 10px;
-}
-
-
-.landing-section .background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-}
-
-/* Infinte slideshow */
-.slideshow {
-  position: relative;
-  overflow: hidden;
-  transition: opacity 0.5s ease-out; 
-}
-
-.images {
-  background: url(slideshow.jpg);
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 300%;
-  transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 10s linear infinite;
-}
-
-.slideshow:hover .images{
-   opacity: 0;
-}
-
-@keyframes moveSlideshow {  
-  100% { 
-    -webkit-transform: translateX(-200%);  
-  }
-}
-
 nav .nav-links {
     padding-left: 30%;
 }
@@ -234,10 +179,10 @@ nav .scroll-color {
 
 .intro {
     position: absolute;
+    top: 100px;
     color: #000;
     text-transform: uppercase;
     width: 100%;
-    z-index: 3;
 }
 
 .intro h2 {
@@ -753,6 +698,34 @@ transform: translate(0px,-500px);
     margin: 100px 40px 20px 30px;
     text-align: left;
     font-size: 18px;
+}
+
+/* Infinte slideshow */
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.5s ease-out;
+}
+
+.images {
+  background: url(slideshow.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 10s linear infinite;
+}
+
+.slideshow:hover .images{
+   opacity: 0;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    -webkit-transform: translateX(-200%);
+  }
 }
 
 /*FOOTER*/
