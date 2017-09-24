@@ -745,13 +745,9 @@ transform: translate(0px,-500px);
 
 
 /*FOOTER*/
-.footer-container .row {
-    padding: 0 50px 0 50px;
-}
 
 footer {
-    background-color: #191919;
-    min-height: 350px;
+    background-color: #FFF;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -760,47 +756,6 @@ footer {
     font-size: 25px;
     color: #fff;
     font-weight: 700;
-}
-
-.footer-col p {
-    color: #bfbfbf;
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 15px;
-    line-height: 17px;
-}
-
-.footer-col p i {
-    width: 20px;
-    color: #999;
-}
-
-.footer-ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 2px;
-    text-align: left;
-}
-
-.footer-ul li {
-    line-height: 29px;
-    font-size: 12px;
-    text-align: left;
-    padding: 0px 16px;
-    display: block;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin: 3px 0;
-    background-color: #4c4c4c;
-    color: #000;
-}
-
-.footer-ul li a {
-    color: #ffffff;
-}
-
-.footer-ul i {
-    margin-right: 10px;
 }
 
 .copyright {
@@ -818,80 +773,40 @@ footer {
     font-size: 10px;
 }
 
-.heading7 {
-    font-size: 21px;
-    font-weight: 700;
-    color: #d9d6d6;
-    text-align: left;
-    margin-bottom: 22px;
+.centered
+{
+	border:none;
 }
-
-.bottom_ul {
-    list-style-type: none;
-    float: right;
-    margin-bottom: 0;
+.page-footer
+{
+	background-color:#fff;
 }
-
-.bottom_ul li {
-    float: left;
-    line-height: 40px;
+.page-footer table
+{
+	border-bottom:none;
+	border-bottom-style:none;
 }
-
-.bottom_ul li:after {
-    content: "/";
-    color: #FFF;
-    margin-right: 8px;
-    margin-left: 8px;
-}
-
-.bottom_ul li a {
-    color: #FFF;
-    font-size: 12px;
-}
-
-.footer-social {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-social li {
-    float: left;
-}
-
-.linked-in {
-    background-color: #007bb6;
-}
-
-.facebook {
-    background-color: #3b5998;
-}
-
-.twitter {
-    background-color: #1da1f2;
-}
-
-.google {
-    background-color: #f63e28;
+.logofooter
+{
+	text-align:center;
+	font-size:10px;
+    font-style:normal;
 }
 
 .logofooter img {
-    max-width: 380px;
+    max-width: 120px;
 }
 
-.footer-col {
-    margin: 70px 0px 70px 0px;
-}
-
-footer .container .row {
-    padding: 40px 0;
+.fa {
+        display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: large;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 .copyright p {
     text-align: center;
-}
-
-footer .row {
-    margin-bottom: 0;
 }
 
 .copyright .row {
