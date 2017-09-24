@@ -681,6 +681,7 @@ transform: translate(0px,-500px);
 /*ACHIEVEMENTS*/
 #achievements {
     background: #fff;
+    padding: 50px 0;
 }
 
 #achievements .description h3 {
@@ -689,44 +690,53 @@ transform: translate(0px,-500px);
 }
 
 #achievements .description p {
-    margin: 20px;
-    text-align: left;
-    font-size: 18px;
-}
-
-#achievements .description .description-para-2{
-    margin: 100px 40px 20px 30px;
+    margin: 20px 60px;
     text-align: left;
     font-size: 18px;
 }
 
 /* Infinte slideshow */
-.slideshow {
+
+.tech-slideshow {
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
-  transition: opacity 0.5s ease-out;
-}
-
-.images {
-  background: url(slideshow.jpg);
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 300%;
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 10s linear infinite;
 }
 
-.slideshow:hover .images{
-   opacity: 0;
+.tech-slideshow > div {
+  height: 200px;
+  width: 5000px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 18s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
 }
 
 @keyframes moveSlideshow {
   100% {
-    -webkit-transform: translateX(-200%);
+    transform: translateX(-66.6666%);
   }
 }
+
+
+
 
 /*FOOTER*/
 .footer-container .row {
