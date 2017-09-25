@@ -153,7 +153,7 @@ nav .register-btn {
 }
 
 nav ul li a {
-    color: #000;
+    color: #fff;
     line-height: 78px;
 }
 
@@ -183,6 +183,11 @@ nav .scroll-color {
     color: #000;
     text-transform: uppercase;
     width: 100%;
+}
+
+.intro3{
+   color: #fff;
+   z-index: 1000;
 }
 
 .intro h2 {
@@ -285,6 +290,107 @@ nav .scroll-color {
     letter-spacing: 14px;
     display: block;
 }
+
+/*SVG AREA*/
+svg {
+    display: block;
+    font: 9em 'Montserrat';
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    background-color: #030321;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4DD0E1;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #F5F5F5;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #01579B;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #4DD0E1;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #78909C;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/*DAYS LEFT CLOCK*/
+#clock{
+	text-align: center;
+	background: #000;
+  font-family: sans-serif;
+  font-weight: 100;
+  height: 650px;
+  width:100%;
+}
+
+h1{
+  color: #fff;
+  font-weight: 100;
+  font-size: 40px;
+  background: #000;
+  margin-top: 50px;
+  
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color:#000;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+    font-size: 30px;
+    
+}
+
+#clockdiv > div{
+	padding: 50px;
+	border-radius: 30px;
+	background: #2ED7f8;
+    display: inline-block;
+    text-align: center;
+    margin-right: 40px
+}
+
+#clockdiv div > span{
+	padding: 50px;
+	background: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+.smalltext{
+	padding-top: 50px;
+	border-radius: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
 
 
 /*ABOUT*/
