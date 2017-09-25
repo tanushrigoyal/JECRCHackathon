@@ -36,6 +36,24 @@ particlesJS.load('particle', '/client/styles/particles.json', function() {
 });
 
 
+$('.box').hide();
+//$('.cross').hide();
+$('.add').show();
+
+// Make sure all the elements with a class of "clickme" are visible and bound
+// with a click event to toggle the "box" state
+$('.clickme').each(function() {
+    $(this).show(0).on('click', function(e) {
+        // This is only needed if your using an anchor to target the "box" elements
+        e.preventDefault();
+
+        // Find the next "box" element in the DOM
+        $(this).next('.box').slideToggle('fast');
+    });
+});
+
+
+
 $(".my-btn-front-1").click(function (e) {
     $(".my-front").css('transform' , 'rotateY(-180deg)');
     $(".my-back").css('transform' , 'rotateY(0)');
@@ -167,8 +185,8 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock("clockdiv", deadline);*/
- 
-/*Time Circle*/ 
-$(".example").TimeCircles({animation: "smooth",circle_bg_color: "#000000",fg_width: 0.05 ,bg_width: 0.5 ,direction: "Clockwise"}); 
+
+/*Time Circle*/
+$(".example").TimeCircles({animation: "smooth",circle_bg_color: "#000000",fg_width: 0.05 ,bg_width: 0.5 ,direction: "Clockwise"});
 
 });

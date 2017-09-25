@@ -51,16 +51,16 @@
    animation: cyclefour 25s linear infinite;
 }
 
-#slider li.fifthanimation {
+/*#slider li.fifthanimation {
    animation: cyclefive 25s linear infinite;
-}
+}*/
 
 @keyframes cycle {
    0%  { top: 0px; } /* When you start the slide, the first image is already visible */
    4%  { top: 0px; } /* Original Position */
-   16% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
-   20% { top: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
-   21% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   20% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   24% { top: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   25% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
    92% { top: -325px; opacity: 0; z-index: 0; }
    96% { top: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
    100%{ top: 0px; opacity: 1; }
@@ -68,27 +68,27 @@
 
 @keyframes cycletwo {
    0%  { top: -325px; opacity: 0; } /* Original Position */
-   16% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
-   20% { top: 0px; opacity: 1; }
-   24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
-   36% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
-   40% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
-   41% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   20% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
+   24% { top: 0px; opacity: 1; }
+   28% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   44% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   48% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   49% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
    100%{ top: -325px; opacity: 0; z-index: -1; }
 }
 
 @keyframes cyclethree {
    0%  { top: -325px; opacity: 0; }
-   36% { top: -325px; opacity: 0; }
-   40% { top: 0px; opacity: 1; }
-   44% { top: 0px; opacity: 1; }
-   56% { top: 0px; opacity: 1; }
-   60% { top: 325px; opacity: 0; z-index: 0; }
-   61% { top: -325px; opacity: 0; z-index: -1;  }
+   44% { top: -325px; opacity: 0; }
+   48% { top: 0px; opacity: 1; }
+   52% { top: 0px; opacity: 1; }
+   66% { top: 0px; opacity: 1; }
+   70% { top: 325px; opacity: 0; z-index: 0; }
+   71% { top: -325px; opacity: 0; z-index: -1;  }
    100%{ top: -325px; opacity: 0; z-index: -1; }
 }
 
-@keyframes cyclefour {
+/*@keyframes cyclefour {
    0%  { top: -325px; opacity: 0; }
    56% { top: -325px; opacity: 0; }
    60% { top: 0px; opacity: 1; }
@@ -97,12 +97,12 @@
    80% { top: 325px; opacity: 0; z-index: 0; }
    81% { top: -325px; opacity: 0; z-index: -1; }
    100%{ top: -325px; opacity: 0; z-index: -1; }
-}
-@keyframes cyclefive {
+}*/
+@keyframes cyclefour {
    0%  { top: -325px; opacity: 0; }
-   76% { top: -325px; opacity: 0; }
-   80% { top: 0px; opacity: 1; }
-   84% { top: 0px; opacity: 1; }
+   66% { top: -325px; opacity: 0; }
+   70% { top: 0px; opacity: 1; }
+   74% { top: 0px; opacity: 1; }
    96% { top: 0px; opacity: 1; z-index: 0; }
 }
 
@@ -114,7 +114,7 @@
    width: 680px;
    height: 10px;
    background: #000;
-   animation: fullexpand 25s ease-out infinite;
+   animation: fullexpand 30s ease-out infinite;
 }
 
 /* ANIMATION BAR */
@@ -161,11 +161,11 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.09);
 }
 
-nav .scroll-color {
+.nav-container nav .scroll-color {
     background: rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
-    box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222 !important;
 }
 
 .scroll-color ul li a {
@@ -177,6 +177,10 @@ nav .scroll-color {
     background: rgba(0, 0, 0, 0.01);
 }
 
+.jecrc {
+    opacity: .6;
+}
+
 .intro {
     position: absolute;
     top: 100px;
@@ -185,9 +189,21 @@ nav .scroll-color {
     width: 100%;
 }
 
+.intro2 {
+    top: 200px;
+}
+
 .intro3{
    color: #fff;
-   z-index: 1000;
+   background: rgba(128,128,128,0.6);
+   width: 70%;
+   left: 15%;
+   top: 200px;
+}
+
+.intro3 h4 {
+    padding: 40px;
+    margin: 10px 30px;
 }
 
 .intro h2 {
@@ -355,7 +371,7 @@ h1{
   font-size: 40px;
   background: #000;
   margin-top: 50px;
-  
+
 }
 
 #clockdiv{
@@ -365,7 +381,7 @@ h1{
 	font-weight: 100;
 	text-align: center;
     font-size: 30px;
-    
+
 }
 
 #clockdiv > div{
@@ -881,7 +897,16 @@ transform: translate(0px,-500px);
   }
 }
 
+/*FAQ*/
+#faq {
+    padding: 100px;
+    font-size: 14px;
+    background: #EEEEEE;
+}
 
+#faq .clickme {
+    cursor: pointer;
+}
 
 
 /*FOOTER*/
