@@ -125,7 +125,7 @@ $(".my-btn-back").click(function (e) {
     $(".my-front").css('transform' , 'rotateY(0)');
 });
 
-/*CLOCK*/
+/*CLOCK
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor(t / 1000 % 60);
@@ -166,7 +166,9 @@ function initializeClock(id, endtime) {
 }
 
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock("clockdiv", deadline);
+initializeClock("clockdiv", deadline);*/
  
+/*Time Circle*/ 
+$(".example").TimeCircles({animation: "smooth",circle_bg_color: "#000000",fg_width: 0.05 ,bg_width: 0.5 ,direction: "Clockwise"}); 
 
 });

@@ -339,7 +339,7 @@ svg {
 	100% {stroke-dashoffset: -35%;}
 }
 
-/*DAYS LEFT CLOCK*/
+/*DAYS LEFT CLOCK
 #clock{
 	text-align: center;
 	background: #000;
@@ -388,10 +388,24 @@ h1{
 	padding-top: 50px;
 	border-radius: 30px;
     font-size: 16px;
-    text-align: center;
+    text-align: center;*/
 }
 
+/*countdown*/
+.example{
+    margin-top: 30px;
+    align-content: center;
 
+}
+
+#countdown{
+    height: 100%;
+    width:100%;
+}
+
+.count-text{
+    margin-top:130px;
+}
 
 /*ABOUT*/
 
