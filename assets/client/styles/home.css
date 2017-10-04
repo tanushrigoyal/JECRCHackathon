@@ -142,7 +142,7 @@ nav .nav-links {
 
 .nav-container nav {
     position: fixed;
-    background: rgba(0, 0, 2, .4);
+    background: rgba(0, 0, 1, .2);
     height: 78px;
     z-index: 10000;
 }
@@ -531,7 +531,7 @@ h1{
 
 .info-hack h4 {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 1px;
     margin-top: 2vh;
 }
@@ -546,6 +546,7 @@ h1{
 /*CHALLENGE*/
 
 #challenge {
+    height: 900px;
     padding: 70px 0px;
     text-align: center;
     background: #fff;
@@ -837,9 +838,10 @@ transform: translate(0px,-500px);
 
 /*PRIZE*/
 
-/* #prize {
-    margin:100px 0;
-} */
+ #prize {
+    background: #F5F5F5;
+    padding: 50px;
+}
 
 .prize-container .parallax-container {
     height: 500px;
@@ -882,9 +884,9 @@ transform: translate(0px,-500px);
 }
 
 .tech-slideshow > div {
-  height: 200px;
+  height: 250px;
   width: 5000px;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  background: url(image1.png);
   position: absolute;
   top: 0;
   left: 0;
@@ -897,7 +899,7 @@ transform: translate(0px,-500px);
 .tech-slideshow .mover-2 {
   opacity: 0;
   transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
+  background-position: 0 -250px;
   animation: moveSlideshow 18s linear infinite;
 }
 .tech-slideshow:hover .mover-2 {

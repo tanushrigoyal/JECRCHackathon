@@ -11,7 +11,7 @@ $( document ).ready(function(){
             $(".top-nav").css('background', 'white');
         } else {
             topNav.removeClass("scroll-color");
-            $(".top-nav").css('background', 'rgba(0, 0, 2, .4)');
+            $(".top-nav").css('background', 'rgba(0, 0, 1, .2)');
             }
     }
 
