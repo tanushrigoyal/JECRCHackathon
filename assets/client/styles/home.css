@@ -142,7 +142,7 @@ nav .nav-links {
 
 .nav-container nav {
     position: fixed;
-    background: rgba(255, 255, 255, 0.01);
+    background: rgba(0, 0, 2, .4);
     height: 78px;
     z-index: 10000;
 }
@@ -176,10 +176,10 @@ nav ul li a:hover {
     color: #2ed7f8;
     background: rgba(0, 0, 0, 0.01);
 }
-/*
+
 .jecrc {
     opacity: .6;
-}*/
+}
 
 .intro {
     position: absolute;
@@ -191,16 +191,15 @@ nav ul li a:hover {
 
 .intro2 {
     top: 200px;
-    color: #fff;
 }
 
-.overlay {
+/*.overlay {
     width: 100%;
     height:650px;
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.3);
-}
+}*/
 
 .intro3{
    color: #fff;
