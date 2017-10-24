@@ -202,4 +202,8 @@ initializeClock("clockdiv", deadline);*/
 /*Time Circle*/
 $(".example").TimeCircles({animation: "smooth",circle_bg_color: "#000000",fg_width: 0.05 ,bg_width: 0.5 ,direction: "Clockwise"});
 
+$(window).resize(function(){
+    $("#timer").TimeCircles().rebuild();
+});
+
 });
