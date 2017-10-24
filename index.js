@@ -13,6 +13,6 @@ app.get('/tandc', function (req, res) {
 app.use('/', express.static(path.join(__dirname, 'assets')))
 
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log('server started at port: 8080');
 });
