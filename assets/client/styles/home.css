@@ -289,7 +289,7 @@ nav ul li a:hover {
                 width: 80%;
             }
             img.responsive-img{
-                height: 450px;   
+                height: 450px;
             }
             #mask{
                 height: 450px;
@@ -458,48 +458,6 @@ h1{
 
 /*ABOUT*/
 
-/*#about h1 {
-    font-size: 24px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#about {
-    width: 100%;
-}
-
-#about p {
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    line-height: 26px;
-    font-weight: 400;
-}
-
-
-.about-container {
-    position: absolute;
-    margin: 70px;
-}
-
-.head-line {
-    width: 40px;
-    height: 2px;
-    background-color: #2ed7f8;
-}
-
-.about-bold {
-    font-weight: bolder;
-    font-size: 15px;
-    color: #ffffff;
-    background-color: rgb(46, 215, 248);
-    padding: 2px 20px;
-    border-radius: 30px;
-    margin: 0 10px;
-}
-*/
 #about h1 {
     font-size: 24px;
     color: #57204a;
@@ -577,6 +535,19 @@ h1{
     background: #fff;
 }
 
+@media only screen and (max-width: 640px) {
+    #challenge {
+        height: 1300px;
+    }
+}
+
+.challenge-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
 .challenge-container h2 {
     font-size: 3em;
     padding-top: 30px;
@@ -586,7 +557,7 @@ h1{
     position: absolute;
     left: 5%;
     width: 90%;
-    height: 500px !important;
+    height: 100% !important;
 
 }
 
