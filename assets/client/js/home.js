@@ -49,7 +49,12 @@ $('.clickme').each(function() {
 
         // Find the next "box" element in the DOM
         $(this).next('.box').slideToggle('fast');
-    });
+        if ($(this).find('i').text() == 'add_circle'){
+        $(this).find('i').text('cancel');
+    } else {
+        $(this).find('i').text('add_circle');
+    }
+});
 });
 
 
