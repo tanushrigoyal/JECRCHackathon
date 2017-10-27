@@ -775,10 +775,23 @@ h1{
 
 #rules .rules-content {
     display: inline-block;
+    padding: 0 100px;
 }
 
 #rules .cont {
     width: 45%;
+}
+
+#rules .rule-line {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 22px;
+}
+
+@media(max-width: 640px) {
+#rules .rules-content {
+    padding: 0 10px;
+}
 }
 
 /*ROCKET*/
@@ -909,7 +922,7 @@ transform: translate(0px,-500px);
 }
 
 #faq .row {
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 #faq .clickme {
