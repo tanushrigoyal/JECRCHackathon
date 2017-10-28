@@ -289,7 +289,7 @@ nav ul li a:hover {
                 width: 80%;
             }
             img.responsive-img{
-                height: 450px;
+                height: 75px;
             }
             #mask{
                 height: 450px;
@@ -695,9 +695,9 @@ h1{
 .time {
     color: #000;
     border-radius: 5px;
-    padding: 20px;
+    padding: 2px;
     margin: 6px 5px;
-    height: auto;
+    height: 100px;
 }
 
 .hack-11 p {
@@ -710,7 +710,7 @@ h1{
 }
 
 .hack-12 img {
-    float: right;
+    float: left;
     width: 40px;
     display: inline-block;
 }
@@ -757,7 +757,7 @@ h1{
 
 @media(max-width:990px) {
     .hack-12 {
-        width: 23.2% !important;
+        width: 44.2% !important;
     }
 }
 
@@ -975,7 +975,20 @@ footer {
     letter-spacing: 2px;
     font-size: 10px;
 }
+@media only screen and (max-width: 992px)
+{
+table.responsive-table thead tr
+    {
+    display: inline-flex; !important
+    padding: 0 10px 0 0; !important
+	}
+}
 
+@media only screen and (min-width: 0){
+html {
+    font-size: 58%; !important
+     }
+}
 .centered
 {
 	border:none;
