@@ -304,10 +304,12 @@ nav ul li a:hover {
             #mask{
                 height: 450px;
             }
-           #h-text{
-              height: 200px !important;
-               z-index: 1000;
-           }
+            .j-text{
+                height: 100px !important;
+                top: 300px!important;
+                 z-index: 1000;
+                 vertical-align: -50px;
+             }
         #particle{
             height: 450px;
         }
@@ -447,8 +449,8 @@ h1{
 	padding-top: 50px;
 	border-radius: 30px;
     font-size: 16px;
-    text-align: center;*/
-}
+    text-align: center;
+}*/
 
 /*countdown*/
 .example{
@@ -765,11 +767,11 @@ h1{
     margin-top: 50px;
 }
 
-@media(max-width:990px) {
+/*@media(max-width:990px) {
     .hack-12 {
         width: 44.2% !important;
     }
-}
+}*/
 
 
 /*RULES*/
@@ -843,6 +845,17 @@ transition: 1s ease-in-out;
     top: 20%;
     right: 50px;
     width: 50%;
+}
+@media(max-width : 490px){
+    .rocket-body h2{
+        top: 0px;
+        font-size: 2rem!important;
+       
+    } 
+
+    .rocket div img{
+        float: left;
+    }
 }
 
 
@@ -996,8 +1009,8 @@ footer {
 {
 table.responsive-table thead tr
     {
-    display: inline-flex; !important
-    padding: 0 10px 0 0; !important
+    display: inline-flex !important;
+    padding: 0 10px 0 0 !important;
 	}
 }
 
