@@ -1001,11 +1001,11 @@ table.responsive-table thead tr
 	}
 }
 
-@media only screen and (min-width: 0){
+/*@media only screen and (min-width: 0){
 html {
     font-size: 58%; !important
      }
-}
+}*/
 .centered
 {
 	border:none;
