@@ -890,6 +890,10 @@ transform: translate(0px,-500px);
     font-weight: 500;
 }
 
+/*Advisory*/
+#advisory .row .card {
+    height: 200px;
+}
 /*ACHIEVEMENTS*/
 #achievements {
     background: #fff;

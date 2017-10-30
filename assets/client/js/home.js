@@ -31,9 +31,9 @@ $( document ).ready(function(){
         }
     });
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particle', '/client/styles/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+// particlesJS.load('particle', '/client/styles/particles.json', function() {
+//   console.log('callback - particles.js config loaded');
+// });
 
 
 $('.box').hide();
