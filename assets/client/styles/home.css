@@ -181,6 +181,16 @@ nav ul li a:hover {
     opacity: .6;
 }
 
+.jecrc-logo {
+    padding-bottom: 50px;
+    height: 200px;
+    width: 250px;
+}
+
+.logos {
+    height: 200px !important;
+}
+
 .intro {
     position: absolute;
     top: 100px;
@@ -946,6 +956,13 @@ transform: translate(0px,-500px);
     padding: 0;
 }
 }
+
+/*Contact*/
+#contact {
+    padding: 100px;
+}
+
+
 
 /*FOOTER*/
 
