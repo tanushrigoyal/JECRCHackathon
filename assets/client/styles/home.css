@@ -647,7 +647,7 @@ h1{
 }
 
 .challenge-btn {
-    font-size: 12px;
+    font-size: 17px;
     text-transform: capitalize;
 }
 
@@ -663,7 +663,7 @@ h1{
 
 .back-content {
     padding: 50px;
-    text-align: left;
+    text-align: justify;
 }
 .back-content ol {
     font-size: 18px;
@@ -872,6 +872,7 @@ h1{
 #rules .rules-content {
     display: inline-block;
     padding: 0 100px;
+    text-align: justify;
 }
 
 #rules .cont {
@@ -1157,7 +1158,7 @@ table.responsive-table thead
 }
 
 .logofooter img {
-    max-width: 30vw;
+    max-width: 20vw;
 }
 
 .fa {
@@ -1210,4 +1211,7 @@ table.responsive-table thead
 
 .textjust{
     text-align:justify;
+}
+.box ol li{
+    text-align: justify;
 }
