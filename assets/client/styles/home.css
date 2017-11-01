@@ -1,3 +1,12 @@
+@font-face {
+    font-family:'EngraversGothic BT';
+    src:url('../../EngraversGothicBT.ttf');
+}
+@font-face {
+    font-family:'EngraversGothic BT';
+    src:url('../../Engravers.woff');
+}
+
 .landing-section {
     height: 650px;
     width: 100%;
@@ -13,7 +22,7 @@
 
 #mask {
    overflow: hidden;
-   height: 650px;
+   height: 75vh;
 }
 
 
@@ -181,14 +190,25 @@ nav ul li a:hover {
     color: #2ed7f8;
     background: rgba(0, 0, 0, 0.01);
 }
-
+.f-anim-jecrc{
+    padding-bottom:3em;
+}
 .jecrc {
-    opacity: .6;
+    opacity: .4;
+    height:80vh !important;
+    width:100vw !important;
 }
 
 .univ {
-    height: 700px;
-    width: 100%;
+    height: 80vh !important;
+    width: 100vw !important;
+    opacity:0.5;
+}
+
+.udml {
+    height: 80vh !important;
+    width: 100vw !important;
+    opacity:0.5;
 }
 
 .jecrc-logo {
@@ -210,8 +230,11 @@ nav ul li a:hover {
 }
 
 .intro2 {
-    top: 200px;
-}
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-wrap:wrap;
+ }
 
 /*.overlay {
     width: 100%;
@@ -240,7 +263,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 1024px) {
     .intro h2 {
-        font-size: 8em !important;
+        font-size: 5.5em !important;
     }
 
     .intro {
@@ -312,7 +335,7 @@ nav ul li a:hover {
                 height: 75px;
             }
             #mask{
-                height: 450px;
+                height: 110.625vw;
             }
             .j-text{
                 height: 100px !important;
@@ -335,7 +358,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 320px) {
     .intro h2 {
-        font-size: 3em !important;
+        font-size: 2.5em !important;
     }
 
         .intro {
@@ -367,7 +390,8 @@ svg {
     display: block;
     font: 9em 'Montserrat';
     width: 100%;
-    height: 350px;
+    height: 38.9vh;
+    padding:0px;
     margin: 0 auto;
     background-color: #030321;
 }
@@ -497,6 +521,7 @@ h1{
 
 #about p {
     font-size: 13px;
+    text-align:justify !important;
     letter-spacing: 0.5px;
     line-height: 26px;
     font-weight: 400;
@@ -564,10 +589,10 @@ h1{
 }
 
 .challenge-container {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 10vh;
 }
 
 .challenge-container h2 {
@@ -576,10 +601,11 @@ h1{
 }
 
  .my {
-    position: absolute;
+    
     left: 5%;
     width: 90%;
     height: 100% !important;
+    overflow-y:auto;
 
 }
 
@@ -599,7 +625,8 @@ h1{
 }
 
 .my-btn-back {
-    bottom: -400px;
+    bottom: 0px;
+    margin-top:20px;
 }
 
 .back-content {
@@ -665,7 +692,9 @@ h1{
     width: 100%;
     height: 100%;
 }
-
+.my-front{
+    max-height:100% !important;
+}
 .card-back, .card-front {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -719,8 +748,7 @@ h1{
     border-radius: 5px;
     padding: 2px;
     margin: 6px 5px;
-    height: 100px;
-}
+    }
 
 .hack-11 p {
     text-transform: uppercase;
@@ -730,7 +758,10 @@ h1{
     margin: 0;
     display: inline-block;
 }
-
+.schdule-container{
+    display:flex;
+    flex-wrap:wrap;
+    }
 .hack-12 img {
     float: left;
     width: 40px;
@@ -765,11 +796,22 @@ h1{
     width: 23.6% !important;
     display: inline-table;
     background-color: #efefef;
-    margin: 6px 0;
+    margin: 6px ;
+}
+@media screen and (max-width:480px){
+    .hack-12 {
+    width: 29.6% !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #efefef;
+    margin: 6px ;
+}
 }
 
 .hack-11 {
-    width: 60%;
+    width: 100%;
     margin: 6px auto;
     text-align: center;
     background-color: #2ed7f8;
@@ -832,7 +874,7 @@ color: #fff;
 .rocket {
 position: absolute;
 bottom: 0px;
-left: 50px;
+left: 2vw;
 -webkit-transition: 1s ease-in;
 -moz-transition: 1s ease-in;
 -o-transition: 1s ease-in;
@@ -847,13 +889,32 @@ height: 350px;
 -o-transition: 1s ease-in-out;
 transition: 1s ease-in-out;
 }
-
+@media screen and (max-width:480px){
+    .rocket {
+position: absolute;
+bottom: 0px;
+left: -20vw;
+-webkit-transition: 1s ease-in;
+-moz-transition: 1s ease-in;
+-o-transition: 1s ease-in;
+transition: 1s ease-in;
+}
 .rocket-body {
     position: absolute;
     color: #fff;
-    padding: 20px;
+    padding: 2.55vw 2.55vh;
+    margin-top:15vh;
+    right: 0;
+    width: 50%;
+}
+}
+.rocket-body {
+    position: absolute;
+    color: #fff;
+    padding: 2vw 2vh;
+    margin-top:15vh;
     top: 20%;
-    right: 50px;
+    right: 0;
     width: 50%;
 }
 @media(max-width : 490px){
@@ -882,18 +943,19 @@ transform: translate(0px,-500px);
 
  #prize {
     background: #F5F5F5;
-    padding: 50px;
+    padding: 5vw;
 }
 
+#prize h6 {
+    font-size: 20px;
+    font-weight: 800;
+}
 #prize h5 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 /*Advisory*/
-#advisory .row .card {
-    height: 200px;
-}
 /*ACHIEVEMENTS*/
 #achievements {
     background: #fff;
@@ -907,7 +969,7 @@ transform: translate(0px,-500px);
 
 #achievements .description p {
     margin: 20px 60px;
-    text-align: left;
+    text-align: justify;
     font-size: 18px;
 }
 
@@ -953,17 +1015,18 @@ transform: translate(0px,-500px);
 
 /*FAQ*/
 #faq {
-    padding: 100px;
+    padding: 30px;
     font-size: 14px;
     background: #EEEEEE;
 }
 
 #faq .row {
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 #faq .clickme {
     cursor: pointer;
+    font-size:30px;
 }
 
 #faq .box {
@@ -972,12 +1035,12 @@ transform: translate(0px,-500px);
 
 @media(min-width: 960px) {
 #faq .flow-text {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 }
 @media(max-width: 640px) {
 #faq h4 {
-    font-size: 1.68rem;
+    font-size: 1.58rem;
 }
 #faq .box {
     padding: 0;
@@ -988,7 +1051,11 @@ transform: translate(0px,-500px);
 #contact {
     padding: 100px;
 }
-
+@media screen and (max-width:480px){
+ #contact {
+    padding: 5vw;
+}   
+}
 
 
 /*FOOTER*/
@@ -1021,18 +1088,18 @@ footer {
 }
 @media only screen and (max-width: 992px)
 {
-table.responsive-table thead tr
+table.responsive-table thead 
     {
-    display: inline-flex !important;
-    padding: 0 10px 0 0 !important;
-	}
+    display: flex !important;
+    flex-wrap:wrap;
+    padding: 0 0px 0 0 !important;
+    }
+    
+    .ftr{
+        margin-bottom:20% !important;
+    }
+   
 }
-
-/*@media only screen and (min-width: 0){
-html {
-    font-size: 58%; !important
-     }
-}*/
 .centered
 {
 	border:none;
@@ -1054,7 +1121,7 @@ html {
 }
 
 .logofooter img {
-    max-width: 120px;
+    max-width: 30vw;
 }
 
 .fa {
@@ -1072,3 +1139,40 @@ html {
 .copyright .row {
     margin-bottom: 0;
 }
+#container-t-c{
+    cursor: pointer;
+    z-index: 1000000000000;
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    padding: 3% 13%;
+    max-height: 100%;
+    overflow-y: auto;
+    /*overflow: auto;*/
+}
+#main-content-container{
+    background-color: white;
+    box-shadow: 2px 2px 2px;
+    border-radius: 3px;
+    position: relative;
+}
+.main-content{
+    margin: 10px;
+    text-align: justify;
+}
+#t-c{
+    cursor: pointer;
+}
+.t-c-close{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+* {
+    font-family:'EngraversGothic BT',Arial,'sans serif';
+}
+
+.textjust{
+    text-align:justify;
+}
+
