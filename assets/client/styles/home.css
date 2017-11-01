@@ -22,7 +22,7 @@
 
 #mask {
    overflow: hidden;
-   height: 75vh;
+   height: 650px;
 }
 
 
@@ -195,18 +195,18 @@ nav ul li a:hover {
 }
 .jecrc {
     opacity: .4;
-    height:80vh !important;
+    height:650px !important;
     width:100vw !important;
 }
 
 .univ {
-    height: 80vh !important;
+    height: 650px !important;
     width: 100vw !important;
     opacity:0.5;
 }
 
 .udml {
-    height: 80vh !important;
+    height: 650px !important;
     width: 100vw !important;
     opacity:0.5;
 }
@@ -219,6 +219,8 @@ nav ul li a:hover {
 
 .logos {
     height: 200px !important;
+    padding: 100px;
+    /*width: 200px;*/
 }
 
 .intro {
@@ -281,6 +283,18 @@ nav ul li a:hover {
     .team-container h2 {
         font-size: 3em !important;
     }
+
+    .landing-section {
+        height: 450px;
+        width: 100%;
+    }
+    #mask {
+       overflow: hidden;
+       height: 50vh;
+    }
+    svg {
+        height: 30vh !important;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -302,6 +316,14 @@ nav ul li a:hover {
 
                 .team-container h2 {
                     font-size: 4em !important;
+                }
+
+                .landing-section {
+                    height: 450px;
+                    width: 100%;
+                }
+                svg {
+                    height: 35vh !important;
                 }
 }
 
@@ -354,6 +376,13 @@ nav ul li a:hover {
         .register-btn{
             text-align: center;
         }
+        svg {
+            height: 35vh !important;
+        }
+        .card
+        {
+            height: 150px !important;
+        }
 }
 
 @media only screen and (max-width: 320px) {
@@ -376,6 +405,9 @@ nav ul li a:hover {
             .team-container h2 {
                 font-size: 2em !important;
             }
+            img.responsive-img{
+                height: 75px;
+            }
 }
 
 .intro h2 p {
@@ -390,7 +422,7 @@ svg {
     display: block;
     font: 9em 'Montserrat';
     width: 100%;
-    height: 38.9vh;
+    height: 50vh;
     padding:0px;
     margin: 0 auto;
     background-color: #030321;
@@ -601,7 +633,7 @@ h1{
 }
 
  .my {
-    
+
     left: 5%;
     width: 90%;
     height: 100% !important;
@@ -680,7 +712,7 @@ h1{
     position: relative;
     float: left;
     text-align: center;
-    height: 100px;
+    height: 200px;
     padding: 0;
     margin: 0;
 }
@@ -956,6 +988,10 @@ transform: translate(0px,-500px);
 }
 
 /*Advisory*/
+#advisory .card {
+    height: 200px;
+}
+
 /*ACHIEVEMENTS*/
 #achievements {
     background: #fff;
@@ -1054,7 +1090,7 @@ transform: translate(0px,-500px);
 @media screen and (max-width:480px){
  #contact {
     padding: 5vw;
-}   
+}
 }
 
 
@@ -1088,17 +1124,17 @@ footer {
 }
 @media only screen and (max-width: 992px)
 {
-table.responsive-table thead 
+table.responsive-table thead
     {
     display: flex !important;
     flex-wrap:wrap;
     padding: 0 0px 0 0 !important;
     }
-    
+
     .ftr{
         margin-bottom:20% !important;
     }
-   
+
 }
 .centered
 {
@@ -1175,4 +1211,3 @@ table.responsive-table thead
 .textjust{
     text-align:justify;
 }
-
