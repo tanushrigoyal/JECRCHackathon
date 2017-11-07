@@ -363,7 +363,11 @@ nav ul li a:hover {
     width: 100vw !important;
     opacity: 0.5;
 }
-
+.banner {
+    height: 650px !important;
+    width: 100vw !important;
+    opacity: 2;
+}
 .jecrc-logo {
     padding-bottom: 50px;
     height: 200px;
@@ -495,6 +499,9 @@ nav ul li a:hover {
     img.responsive-img {
         height: 75px;
     }
+    img.responsive-banner {
+        height: 100px;
+    }
     #mask {
         height: 110.625vw;
     }
@@ -543,6 +550,9 @@ nav ul li a:hover {
     }
     img.responsive-img {
         height: 75px;
+    }
+    img.responsive-banner {
+        height: 100px;
     }
 }
 
@@ -1389,6 +1399,7 @@ footer {
     box-shadow: 2px 2px 2px;
     border-radius: 3px;
     position: relative;
+    padding: 20px;
 }
 
 .main-content {
