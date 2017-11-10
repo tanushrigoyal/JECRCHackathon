@@ -1385,7 +1385,7 @@ footer {
     margin-bottom: 0;
 }
 /********** POP UP **************/
-#container-t-c,#container1 {
+#container-t-c,#container1,#container2,#container3,#container4,#container5,#container6,#container7,#container8,#container9,#container10,#container11,#container12,#container13,#container14,#container15,#container16,#container17,#container18,#container19,#container20,#container21,#container22,#container23,#container24,#container25,#container26,#container27,#container28,#container29,#container30,#container31,#container32 {
     cursor: pointer;
     z-index: 1000000000000;
     position: fixed;
@@ -1395,6 +1395,7 @@ footer {
     max-height: 100%;
     max-width: 100%;
     height:100%;
+    width: 100%;
     overflow-y: auto;
     /*overflow: auto;*/
 }
@@ -1433,7 +1434,7 @@ footer {
 }
 #more{
     float :right !important;
-    margin-right:50px;
+       width: 100%;
 }
 .main-content h4 {
     text-align: left;

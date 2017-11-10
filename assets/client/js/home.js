@@ -241,7 +241,7 @@ $('.clickme').each(function() {
 
 
 
-
+/*
 $(".my-btn-front-1").click(function (e) {
 
 
@@ -619,7 +619,7 @@ $(".my-btn-front-12").click(function (e) {
 
 
 });
-
+*/
 
 
 
@@ -711,15 +711,15 @@ window.onclick = function(event) {
 
 
 };
-
-
-var modal1 = document.getElementById('container1');
+/*
+function popup(container,button,closing){
+var modal1 = document.getElementById(container);
 
 // Get the button that opens the modal
-var btn1 = document.getElementById("more");
+var btn1 = document.getElementById(button);
 
 // Get the <span> element that closes the modal
-var span1 = document.getElementsByClassName("close1")[0];
+var span1 = document.getElementsByClassName(closing)[0];
 
 // When the user clicks on the button, open the modal 
 btn1.onclick = function() {
@@ -737,6 +737,7 @@ window.onclick = function(event) {
         modal1.style.display = "none";
     }
 };
+};*1
 /*CLOCK
 
 
